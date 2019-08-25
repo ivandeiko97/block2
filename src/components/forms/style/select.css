@@ -1,0 +1,107 @@
+.select {
+  position: relative;
+  background-color: #f3f6fc;
+  margin-bottom: 24px;
+  height: 60px;
+  cursor: pointer;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 100%;
+  z-index: 0;
+  font-size: 16px;
+  color: #454545;
+  font-family: Audi Type Light;
+  box-shadow: 0 0 10px #ca2433
+}
+
+.select-closedList {
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.select:hover .select-displayList__show, 
+.select:hover {
+  background-color: #fff;
+}
+
+.select-option__selected {
+  line-height: 60px;
+  padding-left: 30px;
+  user-select: none;
+}
+
+.select-option:not(.select-option__selected) {
+  line-height: 45px;
+  padding-left: 30px;
+  user-select: none;
+}
+
+.select-displayList {
+  display: none;
+}
+
+.select-displayList__show {
+  background-color: #f3f6fc;
+  display: block;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.select-priory {
+  z-index: 999;
+}
+
+.select-option__selected:after {
+  content: url(../images/shape146.png);
+  position: absolute;
+  right: 29px;
+}
+
+.select .openList:after {
+   transform: rotate(160deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  -o-transform: rotate(160deg);
+}
+
+.select-year,
+.select-trim,
+.select-color {
+  width: 189px;
+}
+
+.select-trim {
+  margin-right: 39px;
+}
+
+@media(max-width: 437px) {
+  .select-year,
+  .select-trim,
+  .select-color {
+    width: 160px;
+  }
+
+  .select-car, 
+  .select-carType {
+    width: 100%;
+  }
+}
+
+@media (max-width: 376px) {
+  .select-year,
+  .select-trim,
+  .select-color {
+    width: 150px;
+    margin-right: 0;
+  }
+
+  .select-year:not(:last-of-type),
+  .select-trim {
+    margin-right: 2px;
+  }
+
+  .select-option {
+    padding-left: 15px;
+  }
+}

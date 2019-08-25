@@ -1,0 +1,50 @@
+.contact-field {
+  height: 60px;
+  max-width: 420px;
+  margin-right: 40px;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Audi Type Light;
+}
+
+.contact-field:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+ .contact-field label {
+  position: absolute;
+  top: 0;
+}
+
+.contact-field input {
+  background: #f3f6fc;
+  outline: none;
+  border: none;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #e5eaf3;
+  border-radius: 30px;
+  padding-left: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.contact-field label {
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 30px;
+}
+
+.animatedPlaceholder {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .contact-field {
+    max-width: 100%;
+  }
+}

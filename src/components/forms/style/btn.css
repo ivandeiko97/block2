@@ -1,0 +1,30 @@
+.form-btn {
+  width: 238px;
+  background-color: #151515;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: Audi Type Bold;
+  color: #fff;
+  line-height: 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.btn-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.btn-wrapper::after {
+  content: url('../images/button-shadow.png');
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  z-index: -8;
+}
