@@ -19,7 +19,6 @@
 .formSection {
   width: 100%;
   display: flex;
-  padding: 20px 0 20px;
 }
 
 .contact {
@@ -50,6 +49,10 @@
   font-family: Audi Type Light;
   color: #151515;
   text-transform: uppercase;
+}
+
+.contact .btn-wrapper {
+  margin-bottom: 10px;
 }
 
 .formSearch {
@@ -213,7 +216,12 @@
   }
   
   .formSearch-p {
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .formSearch .form-btn {
+    margin-bottom: 10px;
   }
 }
 
