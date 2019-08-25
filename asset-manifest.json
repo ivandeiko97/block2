@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/block2/static/css/main.28efaa02.chunk.css",
+    "main.css": "/block2/static/css/main.1500537b.chunk.css",
     "main.js": "/block2/static/js/main.e501439c.chunk.js",
     "main.js.map": "/block2/static/js/main.e501439c.chunk.js.map",
     "runtime~main.js": "/block2/static/js/runtime~main.7c697042.js",
@@ -8,9 +8,9 @@
     "static/js/2.daceb981.chunk.js": "/block2/static/js/2.daceb981.chunk.js",
     "static/js/2.daceb981.chunk.js.map": "/block2/static/js/2.daceb981.chunk.js.map",
     "index.html": "/block2/index.html",
-    "precache-manifest.e8d49c55a817bf87f996daa3913243a8.js": "/block2/precache-manifest.e8d49c55a817bf87f996daa3913243a8.js",
+    "precache-manifest.01c9c8ff1bccd426bc0663b07296c2ac.js": "/block2/precache-manifest.01c9c8ff1bccd426bc0663b07296c2ac.js",
     "service-worker.js": "/block2/service-worker.js",
-    "static/css/main.28efaa02.chunk.css.map": "/block2/static/css/main.28efaa02.chunk.css.map",
+    "static/css/main.1500537b.chunk.css.map": "/block2/static/css/main.1500537b.chunk.css.map",
     "static/media/style.css": "/block2/static/media/backgroundForm.e13da8c7.png"
   }
 }
