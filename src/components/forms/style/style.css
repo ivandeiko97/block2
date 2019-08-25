@@ -216,8 +216,10 @@
   }
   
   .formSearch-p {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .formSearch .form-btn {
