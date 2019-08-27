@@ -1,24 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../../style/input.css';
 
 export default function Input({className, placeholder, type, required }) {
- const [displayHolder, setDisplayHolder] = useState(true);
- const [value, setValue] = useState('');
- 
- function changeValue({ target }) {
-   if (target.value.trim() !== '') {
-     setValue(target.value)
-   } else {
-      setDisplayHolder(true);
-   }
- };
+  if (required) {
+    return (
+      <div className="input-wrapper">
+        <input type={type} className={`input-control ${className}`} required />       
+        <div className="placeholder">{placeholder}<span className="requiredField">*</span></div>
+      </div>
+    )
+  }
   return (
-    <div className={className} onClick={() => setDisplayHolder(false)}>
-      <input type={type} defaultValue={value} onBlur={(event) => changeValue(event)}/>
-      <label className={`${displayHolder && value === '' ? '' : 'animatedPlaceholder'}`}>
-        {placeholder}
-        {required ?  <span className="requiredField">*</span> : null}
-      </label>
+    <div className="input-wrapper">
+      <input type={type} className={`${className}`} placeholder={placeholder} />
     </div>
   )
 }

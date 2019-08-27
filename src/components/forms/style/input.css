@@ -1,50 +1,64 @@
-.contact-field {
-  height: 60px;
-  max-width: 420px;
-  margin-right: 40px;
+@media (max-width: 1200px) {
+  .input-wrapper {
+    max-width: 100%;
+  }
+}
+
+.input-wrapper {
   position: relative;
+  height: 60px;
   box-sizing: border-box;
   font-size: 16px;
   font-family: Audi Type Light;
+  color: #454545;
+  width: 100%;
 }
 
-.contact-field:not(:last-child) {
-  margin-bottom: 23px;
-}
-
- .contact-field label {
-  position: absolute;
-  top: 0;
-}
-
-.contact-field input {
+.input-wrapper input {
   background: #f3f6fc;
   outline: none;
   border: none;
   height: 60px;
-  width: 100%;
   border-bottom: 1px solid #e5eaf3;
   border-radius: 30px;
   padding-left: 30px;
+  width: 100%;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  box-sizing: border-box;
 }
 
-.contact-field label {
-  height: 60px;
-  line-height: 60px;
-  cursor: pointer;
-  padding-left: 30px;
+.input-wrapper:not(:last-child) {
+  margin-bottom: 23px;
 }
 
-.animatedPlaceholder {
-  display: none;
+.placeholder {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 
-@media (max-width: 1200px) {
-  .contact-field {
-    max-width: 100%;
-  }
+.input-control:focus ~ .placeholder,
+.input-control:valid ~ .placeholder {
+  display:none;
 }
+
+.contact-field__name::placeholder {
+  color: #454545;
+  font-size: 16px;
+  font-family: Audi Type Light;
+  opacity: 1;
+}
+
+.contact-field__name:focus::-webkit-input-placeholder { color:transparent; }
+.contact-field__name:focus:-moz-placeholder { color:transparent; }
+.contact-field__name:focus::-moz-placeholder { color:transparent; } 
+.contact-field__name:focus:-ms-input-placeholder { color:transparent; } 

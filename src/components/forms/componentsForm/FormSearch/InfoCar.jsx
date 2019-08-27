@@ -7,12 +7,14 @@ export default function InfoCar() {
   const listYearFrom = ['From 1999', 'From 2000'];
   const listYearTo = ['To 2019', 'To 2018'];
   const listModel = ['Q5', 'Q7', 'Q8', 'Q3'];
+  const listPrice = ['Price(max)', '2000', '1500', '1000']
 
   return (
     <section className="infoCar">
       <div className="infoCar-leftSection">
         <Select listOption={listTypeCar} className="select-carType" selectedOption="Any type (New and Pre-Owned)" />
         <Select listOption={listCar} className="select-car" selectedOption="Audi" />
+        <Select listOption={listPrice} className="select-price" selectedOption="Price(max)" />
       </div>
       <div className="infoCar-rightSection">
         <div className="infoCar-yearInfo">

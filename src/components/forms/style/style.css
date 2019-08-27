@@ -7,9 +7,10 @@
 
 @font-face {
   font-family: 'Audi Type Light';
+  src: url('../fonts/AudiTypeScreen-Light.woff') format('woff');
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/AudiTypeScreen-Light.woff') format('woff');
+  speak: none;
 }
 
 .requiredField {
@@ -23,7 +24,10 @@
 
 .contact {
   max-width: 692px;
-  padding-left: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .contact-wrapper {
@@ -31,13 +35,15 @@
 }
 
 .contact-conteinerField {
+  max-width: 418px;
   margin: 70px 0 41px;
 }
 
 .contact-text {
+  max-width: 466px;
   font-size: 22px;
   font-family: Audi Type Light;
-  font-weight: lighter;
+  color: #151515;
 }
 
 .contact-text:not(:last-child) {
@@ -46,14 +52,12 @@
 
 .contact-h2 {
   font-size: 16px;
-  font-family: Audi Type Light;
+  font-family: Audi Type Light !important;
+  font-weight: bold;
   color: #151515;
   text-transform: uppercase;
 }
 
-.contact .btn-wrapper {
-  margin-bottom: 10px;
-}
 
 .formSearch {
   background-image: url(../images/backgroundForm.png);
@@ -81,6 +85,7 @@
   font-size: 16px;
   font-family: Audi Type Light;
   color: #454545;
+  background-color: #f3f6fc;
   width: 100%;
   height: 60px;
   outline: none;
@@ -93,6 +98,17 @@
   -o-border-radius: 30px;
   box-sizing: border-box;
   box-shadow: 0 0 10px #ca2433
+}
+
+.formSearch-inputWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.formSearch-input:hover,
+.formSearch-input:focus {
+  background-color: #fff;
 }
 
 .formSearch-p {
@@ -115,6 +131,7 @@
 
 .infoCar-rightSection {
   margin-left: 40px;
+  width: 100%;
 }
 
 .infoCar-yearInfo,
@@ -155,15 +172,24 @@
 }
 
 
-@media (max-width: 1200px) {
-  .infoCar-leftSection {
-    max-width: 419px;
+@media (max-width: 1250px) {
+  .formSearch {
+    background-size: cover;
+  }
+
+  .formSearch-wrapper {
+    margin: auto;
   }
 
   .formSection {
     flex-direction: column;
     padding-bottom: 0;
     padding-top: 50px;
+  }
+
+  .contact-conteinerField {
+    margin: auto;
+    margin-bottom: 41px;
   }
 
   .contact {
@@ -205,6 +231,16 @@
     margin-bottom: 20px;
   }
 
+  .formSearch input {
+    max-width: 419px;
+    margin: auto;
+  }
+
+  .infoCar-leftSection,
+  .infoCar-rightSection {
+     max-width: 419px;
+  }
+
   .infoCar {
     flex-direction: column;
     align-items: center;
@@ -214,12 +250,20 @@
   .formSearch .btn-wrapper {
     margin: 0;
   }
+
+  .infoCar-yearInfo,
+  .infoCar-specific {
+    justify-content: center;
+  }
   
   .formSearch-p {
+    display: block;
+    max-width: 419px;
     text-align: center;
-    margin-left: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 27px;
+    margin-bottom: 27px;
   }
 
   .formSearch .form-btn {
@@ -227,7 +271,11 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 417px) {
+  .infoCar-yearInfo,
+  .infoCar-specific {
+    justify-content: space-between;
+  }
   .infoCar-yearInfo .devide {
     display: none;
   }

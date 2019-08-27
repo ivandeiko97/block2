@@ -15,7 +15,8 @@ export default function Select({listOption, selectedOption, className}) {
         className={`select-option select-option__selected ${showList ? 'openList' : ''}`}
         onClick={() => setDisplayList(!showList)}
       >
-        {value}<span className="requiredField">*</span>
+        {value}
+        {value === selectedOption ? <span className="requiredField">*</span> : null }
       </div>
       <div className={`select-displayList ${showList ? 'select-displayList__show' : ''}`}>
         {listOption.map(option => {

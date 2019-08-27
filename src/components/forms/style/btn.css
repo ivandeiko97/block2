@@ -25,6 +25,6 @@
   content: url('../images/button-shadow.png');
   position: absolute;
   left: 3px;
-  top: 8px;
+  top: 5px;
   z-index: -8;
 }
