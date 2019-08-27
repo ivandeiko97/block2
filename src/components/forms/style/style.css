@@ -173,6 +173,9 @@
 
 
 @media (max-width: 1250px) {
+  .formSection {
+    align-items: center;
+  }
   .formSearch {
     background-size: cover;
   }
@@ -195,7 +198,9 @@
   .contact {
     padding-left: 10px;
     padding-bottom: 100px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .contact-h2 {
